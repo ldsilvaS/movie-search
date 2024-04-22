@@ -46,8 +46,8 @@ export const TextContainer = styled.div`
     .overview {
         color: #FBFBFB;
         text-align: justify;
-        font-size: 1.1em;
-        line-height: 1.2em;
+        font-size: 1em;
+        line-height: 1.1em;
     }
 
     .data {
