@@ -7,8 +7,8 @@ export const MovieContainer = styled.div`
     flex-direction: column;
     border-radius: 10px;
     text-align: center;
-    background: #302e33;
-    padding: 10px 0px;
+    background: #1a191b;
+    padding: 15px 10px;
 
     .imageUrl {
         width: 300px;
@@ -24,10 +24,30 @@ export const MovieContainer = styled.div`
         letter-spacing: 1.5px;
     }
 
-    .avarage {
+    .average {
         margin-bottom: 10px;
         font-size: 1.5em;
         color: #fcd600;
+    }
+
+    .average .text_average {
+        color: #FBFBFB;
+    }
+
+    a {
+        padding: 10px 100px;
+        font-size: 1.3em;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        background: #ff4800;
+        cursor: pointer;
+        color: #FBFBFB;
+        transition: background 0.5s;
+    }
+
+    a:hover {
+        background: #f8885c;
     }
 
 

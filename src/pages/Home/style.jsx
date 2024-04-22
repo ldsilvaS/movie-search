@@ -11,6 +11,6 @@ export const Container = styled.section`
     justify-content: center;
     margin-top: 40px;
     grid-gap: 10px;
-    row-gap: 100px;
+    row-gap: 80px;
 
 `

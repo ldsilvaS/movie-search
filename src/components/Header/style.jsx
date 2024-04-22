@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
     align-items: center;
     justify-content: space-between;
     padding: 25px 100px;
-    background: #302e33;
+    background: #1a191b;
 `
 
 export const Title = styled.h1`

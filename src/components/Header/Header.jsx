@@ -1,9 +1,28 @@
 import { HeaderContainer, Navigator, Title } from "./style";
 import { FaSearch } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
+import { useState } from "react";
 
 
 const Header = () => {
+
+    const [search, setSearch] = useState("")
+
+    const navigate = useNavigate();
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(search);
+
+        if(!search) return     // Colocar depois uma modal.
+
+        navigate(`/search?q=${search}`);   // Navega até a página escolhida.
+        setSearch("");
+    }
+
+
+
     return(
         <HeaderContainer>
             <Title>
@@ -11,15 +30,14 @@ const Header = () => {
                 <FaSearch />
             </Title>
             <Navigator>
-                <h1></h1>
-                <h1><Link to="/movie/2">Movie</Link></h1>
-                <h1><Link to="/search">Search</Link></h1>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <input  
                         type="text"
-                        placeholder="Busque um filme" 
+                        placeholder="Busque um filme"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
                     />
-                    <button type="submit"><FaSearch /></button>
+                    <button type="submit" ><FaSearch /></button>
                 </form>
             </Navigator>
         </HeaderContainer>
