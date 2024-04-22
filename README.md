@@ -5,7 +5,7 @@
 # Funcionalidades
 
 <ul>
-  <li>Os filmes mais bem avaliados.</li>
+  <li>Lista de filmes melhor avaliados pela critica.</li>
   <li>Busca de filmes.</li>
   <li>Detalhes de cada filme.</li>
 </ul>
