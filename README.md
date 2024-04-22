@@ -11,3 +11,7 @@
 </ul>
 
 OBS: Projeto feito apenas para aprimoramento de habilidades no React.
+
+# API Utilizada
+
+<p>TheMovieDb : https://developer.themoviedb.org/reference/intro/getting-started</p>
